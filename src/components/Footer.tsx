@@ -1,6 +1,7 @@
 
 import React from 'react';
 import { Code, Globe, Settings } from 'lucide-react';
+import { Link } from 'react-router-dom';
 
 const Footer = () => {
   return (
@@ -17,7 +18,7 @@ const Footer = () => {
             <p className="text-gray-300 mb-6 leading-relaxed">
               Your trusted partner for professional web development, PHP programming, 
               domain registration, and hosting services. Creating digital solutions 
-              that drive business growth.
+              that drive business growth and online success.
             </p>
             <div className="flex gap-4">
               <div className="w-10 h-10 bg-blue-600 rounded-lg flex items-center justify-center">
@@ -32,24 +33,24 @@ const Footer = () => {
           <div>
             <h4 className="text-lg font-semibold mb-4">Services</h4>
             <ul className="space-y-2 text-gray-300">
-              <li><a href="#" className="hover:text-white transition-colors">Web Design</a></li>
-              <li><a href="#" className="hover:text-white transition-colors">PHP Development</a></li>
-              <li><a href="#" className="hover:text-white transition-colors">WordPress Sites</a></li>
-              <li><a href="#" className="hover:text-white transition-colors">Domain Registration</a></li>
-              <li><a href="#" className="hover:text-white transition-colors">Web Hosting</a></li>
-              <li><a href="#" className="hover:text-white transition-colors">Website Maintenance</a></li>
+              <li><a href="#services" className="hover:text-white transition-colors">Freelance Web Design</a></li>
+              <li><a href="#services" className="hover:text-white transition-colors">PHP Development</a></li>
+              <li><a href="#services" className="hover:text-white transition-colors">WordPress Development</a></li>
+              <li><a href="#services" className="hover:text-white transition-colors">Domain Registration</a></li>
+              <li><a href="#services" className="hover:text-white transition-colors">Web Hosting Services</a></li>
+              <li><a href="#services" className="hover:text-white transition-colors">Website Maintenance</a></li>
             </ul>
           </div>
 
           <div>
             <h4 className="text-lg font-semibold mb-4">Quick Links</h4>
             <ul className="space-y-2 text-gray-300">
-              <li><a href="#" className="hover:text-white transition-colors">Portfolio</a></li>
-              <li><a href="#" className="hover:text-white transition-colors">About</a></li>
-              <li><a href="#" className="hover:text-white transition-colors">Contact</a></li>
-              <li><a href="#" className="hover:text-white transition-colors">Blog</a></li>
-              <li><a href="#" className="hover:text-white transition-colors">Pricing</a></li>
-              <li><a href="#" className="hover:text-white transition-colors">FAQ</a></li>
+              <li><Link to="/portfolio" className="hover:text-white transition-colors">Portfolio</Link></li>
+              <li><a href="#about" className="hover:text-white transition-colors">About</a></li>
+              <li><a href="#contact" className="hover:text-white transition-colors">Contact</a></li>
+              <li><Link to="/blog" className="hover:text-white transition-colors">Blog</Link></li>
+              <li><a href="#services" className="hover:text-white transition-colors">Pricing</a></li>
+              <li><a href="#contact" className="hover:text-white transition-colors">Get Quote</a></li>
             </ul>
           </div>
         </div>
@@ -60,8 +61,8 @@ const Footer = () => {
               © 2024 FreelanceWebPro. All rights reserved. Professional freelance web development services.
             </p>
             <div className="flex gap-6 mt-4 md:mt-0">
-              <a href="#" className="text-gray-400 hover:text-white text-sm">Privacy Policy</a>
-              <a href="#" className="text-gray-400 hover:text-white text-sm">Terms of Service</a>
+              <Link to="/privacy-policy" className="text-gray-400 hover:text-white text-sm transition-colors">Privacy Policy</Link>
+              <Link to="/terms-conditions" className="text-gray-400 hover:text-white text-sm transition-colors">Terms & Conditions</Link>
             </div>
           </div>
         </div>
