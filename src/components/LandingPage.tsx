@@ -111,7 +111,7 @@ const LandingPage = () => {
             alt="Responsive website design displayed on a desktop monitor and laptop"
             width={1600}
             height={1000}
-            className="absolute inset-0 h-full w-full object-cover object-center opacity-55"
+            className="absolute inset-0 h-full w-full object-cover object-center opacity-70"
           />
           <div className="absolute inset-0 bg-hero-overlay" />
           <div className="relative mx-auto flex min-h-[calc(100vh-5rem)] max-w-7xl flex-col justify-center px-5 py-20 sm:px-8 lg:py-24">

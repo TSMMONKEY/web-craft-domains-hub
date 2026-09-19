@@ -106,25 +106,25 @@ All colors MUST be HSL.
 
 @layer base {
   .landing-theme {
-    --background: 224 34% 8%;
-    --foreground: 210 40% 98%;
-    --card: 224 30% 10%;
-    --card-foreground: 210 40% 98%;
-    --popover: 224 30% 10%;
-    --popover-foreground: 210 40% 98%;
-    --primary: 228 86% 62%;
+    --background: 220 33% 99%;
+    --foreground: 224 34% 12%;
+    --card: 0 0% 100%;
+    --card-foreground: 224 34% 12%;
+    --popover: 0 0% 100%;
+    --popover-foreground: 224 34% 12%;
+    --primary: 228 80% 57%;
     --primary-foreground: 210 40% 98%;
-    --secondary: 224 27% 12%;
-    --secondary-foreground: 210 40% 98%;
-    --muted: 223 20% 18%;
-    --muted-foreground: 218 14% 68%;
-    --accent: 260 82% 72%;
-    --accent-foreground: 224 34% 8%;
-    --border: 222 20% 20%;
-    --input: 222 20% 20%;
-    --ring: 228 86% 62%;
-    --hero-overlay: linear-gradient(90deg, hsl(224 34% 8% / 0.98) 0%, hsl(224 34% 8% / 0.88) 48%, hsl(224 34% 8% / 0.35) 100%);
-    --shadow-primary: 0 18px 48px -22px hsl(228 86% 62% / 0.7);
+    --secondary: 220 27% 96%;
+    --secondary-foreground: 224 34% 12%;
+    --muted: 220 20% 93%;
+    --muted-foreground: 220 12% 42%;
+    --accent: 261 67% 52%;
+    --accent-foreground: 210 40% 98%;
+    --border: 220 20% 86%;
+    --input: 220 20% 86%;
+    --ring: 228 80% 57%;
+    --hero-overlay: linear-gradient(90deg, hsl(220 33% 99% / 0.99) 0%, hsl(220 33% 99% / 0.94) 48%, hsl(220 33% 99% / 0.48) 100%);
+    --shadow-primary: 0 18px 48px -22px hsl(228 80% 57% / 0.45);
     font-family: 'Work Sans', sans-serif;
   }
 }
