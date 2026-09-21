@@ -1,7 +1,7 @@
 import { FormEvent, useEffect, useState } from 'react';
 import { z } from 'zod';
 import { CalendarDays, CheckCircle2, Clock3 } from 'lucide-react';
-import { Button } from '@/components/ui/button';
+import { Button, type ButtonProps } from '@/components/ui/button';
 import {
   Dialog,
   DialogContent,
@@ -178,6 +178,21 @@ const ConsultationBookingDialog = ({ open, onOpenChange, service }: Consultation
         )}
       </DialogContent>
     </Dialog>
+  );
+};
+
+type ConsultationBookingButtonProps = ButtonProps & {
+  service: string;
+};
+
+export const ConsultationBookingButton = ({ service, children, ...buttonProps }: ConsultationBookingButtonProps) => {
+  const [open, setOpen] = useState(false);
+
+  return (
+    <>
+      <Button {...buttonProps} onClick={() => setOpen(true)}>{children}</Button>
+      <ConsultationBookingDialog open={open} onOpenChange={setOpen} service={service} />
+    </>
   );
 };
 

@@ -3,7 +3,7 @@ import React from 'react';
 import Navigation from '@/components/Navigation';
 import Footer from '@/components/Footer';
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from '@/components/ui/card';
-import { Button } from '@/components/ui/button';
+import { ConsultationBookingButton } from '@/components/ConsultationBookingDialog';
 import { Layers, Puzzle, Paintbrush, Rocket } from 'lucide-react';
 
 const WordPressDevelopment = () => {
@@ -97,9 +97,9 @@ const WordPressDevelopment = () => {
             <p className="text-lg text-gray-600 mb-8">
               Let's discuss your WordPress development needs and create something amazing.
             </p>
-            <Button size="lg" className="bg-gradient-to-r from-blue-600 to-purple-600 hover:from-blue-700 hover:to-purple-700">
-              Start Your WordPress Project
-            </Button>
+            <ConsultationBookingButton service="WordPress Development" size="lg" className="bg-gradient-to-r from-blue-600 to-purple-600 hover:from-blue-700 hover:to-purple-700">
+              Book a Free Consultation
+            </ConsultationBookingButton>
           </div>
         </div>
       </section>

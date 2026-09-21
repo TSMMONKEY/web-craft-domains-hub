@@ -3,7 +3,7 @@ import React from 'react';
 import Navigation from '@/components/Navigation';
 import Footer from '@/components/Footer';
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from '@/components/ui/card';
-import { Button } from '@/components/ui/button';
+import { ConsultationBookingButton } from '@/components/ConsultationBookingDialog';
 import { Palette, Smartphone, Zap, Users } from 'lucide-react';
 
 const FreelanceWebDesign = () => {
@@ -95,9 +95,9 @@ const FreelanceWebDesign = () => {
             <p className="text-lg text-gray-600 mb-8">
               Let's create a stunning website that represents your brand perfectly.
             </p>
-            <Button size="lg" className="bg-gradient-to-r from-blue-600 to-purple-600 hover:from-blue-700 hover:to-purple-700">
-              Get Started Today
-            </Button>
+            <ConsultationBookingButton service="Freelance Web Design" size="lg" className="bg-gradient-to-r from-blue-600 to-purple-600 hover:from-blue-700 hover:to-purple-700">
+              Book a Free Consultation
+            </ConsultationBookingButton>
           </div>
         </div>
       </section>
