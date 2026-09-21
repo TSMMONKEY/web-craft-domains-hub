@@ -3,7 +3,7 @@ import React from 'react';
 import Navigation from '@/components/Navigation';
 import Footer from '@/components/Footer';
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from '@/components/ui/card';
-import { Button } from '@/components/ui/button';
+import { ConsultationBookingButton } from '@/components/ConsultationBookingDialog';
 import { Globe, Search, Shield, Clock } from 'lucide-react';
 
 const DomainRegistration = () => {
@@ -116,9 +116,9 @@ const DomainRegistration = () => {
             <p className="text-lg text-gray-600 mb-8">
               Find and register your perfect domain name today with our easy process.
             </p>
-            <Button size="lg" className="bg-gradient-to-r from-blue-600 to-purple-600 hover:from-blue-700 hover:to-purple-700">
-              Search Domains Now
-            </Button>
+            <ConsultationBookingButton service="Domain Registration" size="lg" className="bg-gradient-to-r from-blue-600 to-purple-600 hover:from-blue-700 hover:to-purple-700">
+              Book a Free Consultation
+            </ConsultationBookingButton>
           </div>
         </div>
       </section>

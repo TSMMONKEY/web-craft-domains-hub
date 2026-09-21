@@ -3,7 +3,7 @@ import React from 'react';
 import Navigation from '@/components/Navigation';
 import Footer from '@/components/Footer';
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from '@/components/ui/card';
-import { Button } from '@/components/ui/button';
+import { ConsultationBookingButton } from '@/components/ConsultationBookingDialog';
 import { Shield, RefreshCw, TrendingUp, Clock } from 'lucide-react';
 
 const WebsiteMaintenance = () => {
@@ -110,9 +110,9 @@ const WebsiteMaintenance = () => {
             <p className="text-lg text-gray-600 mb-8">
               Let us handle the technical details while you focus on growing your business.
             </p>
-            <Button size="lg" className="bg-gradient-to-r from-blue-600 to-purple-600 hover:from-blue-700 hover:to-purple-700">
-              Choose Your Plan
-            </Button>
+            <ConsultationBookingButton service="Website Maintenance" size="lg" className="bg-gradient-to-r from-blue-600 to-purple-600 hover:from-blue-700 hover:to-purple-700">
+              Book a Free Consultation
+            </ConsultationBookingButton>
           </div>
         </div>
       </section>

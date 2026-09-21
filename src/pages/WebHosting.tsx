@@ -3,7 +3,7 @@ import React from 'react';
 import Navigation from '@/components/Navigation';
 import Footer from '@/components/Footer';
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from '@/components/ui/card';
-import { Button } from '@/components/ui/button';
+import { ConsultationBookingButton } from '@/components/ConsultationBookingDialog';
 import { Server, Shield, Zap, HeadphonesIcon } from 'lucide-react';
 
 const WebHosting = () => {
@@ -129,11 +129,12 @@ const WebHosting = () => {
                         </li>
                       ))}
                     </ul>
-                    <Button 
+                    <ConsultationBookingButton
+                      service={`${plan.name} Web Hosting Plan`}
                       className={`w-full mt-6 ${plan.popular ? 'bg-gradient-to-r from-blue-600 to-purple-600 hover:from-blue-700 hover:to-purple-700' : 'bg-gray-600 hover:bg-gray-700'}`}
                     >
-                      Get Started
-                    </Button>
+                      Book a Free Call
+                    </ConsultationBookingButton>
                   </CardContent>
                 </Card>
               ))}
@@ -145,9 +146,9 @@ const WebHosting = () => {
             <p className="text-lg text-gray-600 mb-8">
               Contact us for enterprise hosting, dedicated servers, or custom configurations.
             </p>
-            <Button size="lg" className="bg-gradient-to-r from-blue-600 to-purple-600 hover:from-blue-700 hover:to-purple-700">
-              Contact for Custom Solution
-            </Button>
+            <ConsultationBookingButton service="Custom Web Hosting" size="lg" className="bg-gradient-to-r from-blue-600 to-purple-600 hover:from-blue-700 hover:to-purple-700">
+              Book a Free Consultation
+            </ConsultationBookingButton>
           </div>
         </div>
       </section>
