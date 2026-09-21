@@ -1,11 +1,14 @@
-# Premium conversion-focused landing page
+# Free consultation booking popup
 
 ## Outcome
-Replace the basic landing page with the selected premium editorial direction while keeping the existing blue-purple identity and all current service pages.
+Every service call-to-action opens the same booking popup instead of doing nothing.
 
 ## Build
-- Use an image-led, dark first screen with one primary quote action and a portfolio link.
-- Introduce Instrument Serif headings and Work Sans body copy.
-- Add honest trust signals, a concise services overview, conversion rationale, a four-step process, common questions, and a final quote invitation.
-- Keep navigation to all key pages and ensure the page works cleanly on mobile.
-- Use semantic design tokens and update the site title and description.
+- Offer a clear 30-minute or 60-minute call choice.
+- Collect name, email, phone (optional), business, preferred date and time, and a short project summary.
+- Preselect the service and hosting plan that opened the popup.
+- Validate all details before accepting the request, show useful field errors, and confirm submission without leaving the page.
+- Reuse the popup across web design, PHP, WordPress, domains, hosting, and maintenance pages.
+
+## Limitation
+The popup will collect and validate a booking request in the browser. Calendar reservation and message delivery require a connected booking or email service, which is not part of this change.
